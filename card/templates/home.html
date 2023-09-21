@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load crispy_forms_tags %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Two Buttons Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Word flash-card</h1>
+<div class="container mt-5 pt-5 mb-5">
+    <a href="{% url 'list' %}" class="button">View Word</a>
+    <a href="{% url 'create' %}" class="button">Add Word</a>
+</div>
+{% block content %}
+{% endblock %}
+</body>
+</html>
