@@ -22,8 +22,8 @@ class WordList(ListView):
     model = Word
     template_name = "view_word.html"
     context_object_name = 'users'  # Default: object_list
-    paginate_by = 2
-    queryset = Word.objects.all()
+    paginate_by = 10
+    queryset = Word.objects.all().order_by('?')
 
 
 from django.contrib.auth import authenticate, login
