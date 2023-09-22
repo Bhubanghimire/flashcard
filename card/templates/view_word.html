@@ -3,15 +3,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Add Words</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>view words</title>
     <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}">
+
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
 {%load crispy_forms_tags %}
 
     <div class="container mt-5 pt-5 mb-5">
-        <h1>Add Words</h1>
+        <h3>Word List  <a href="{% url 'home' %}" class="button">Home</a>
+    <a href="{% url 'create' %}" class="button">Add Word</a></h3>
+
         <table class="table table-bordered">
   <thead>
     <tr>
