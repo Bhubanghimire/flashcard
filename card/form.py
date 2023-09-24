@@ -5,4 +5,4 @@ from .models import Word
 class WordForm(forms.ModelForm):
     class Meta:
         model = Word
-        fields = ['name', 'meaning', 'similar_words']
+        fields = ['name', 'meaning', 'sentence']
