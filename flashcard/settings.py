@@ -26,6 +26,8 @@ SECRET_KEY = 'django-insecure-(z)%79-sv_za=t)mu)bwe4=!gjbkl451whpw8koa53i9q_m48s
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ['https://*.bhubanghimire.com.np','https://*.127.0.0.1']
+
 
 
 # Application definition
